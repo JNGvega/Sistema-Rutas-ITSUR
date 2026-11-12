@@ -1,13 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package proyecto.itsur.modelo;
 
-/**
- *
- * @author Armando
- */
+
 public class Arista {
+    private Lugar destino;
+    /* 
+    tenemos la distancia en metros como una unidad universal
+    para el proyecto
+    */
+    private double distancia;
+    public Arista (Lugar destino, double distancia) {
+        this.destino = destino;
+        this.distancia = distancia;
+    }
     
+    public Lugar getDestino () {
+        return destino;
+    }
+    
+    public double distancia () {
+        return distancia;
+    }
 }
