@@ -144,6 +144,15 @@ public class ProyectoITSUR {
         grafo.nuevoLugar(entradaPrincipal); //
         grafo.nuevoLugar(cabanaGastro); //
         
-       
+        
+        // Biblioteca
+        biblioteca.nuevaArista(nodo20, 11.75);
+        
+        // Nodo 20
+        nodo20.nuevaArista(biblioteca, 11.75);
+        nodo20.nuevaArista(nodo21, 18.10);
+        
+        // Nodo 21
+        nodo21.nuevaArista(nodo20, 18.10);
     }
 }

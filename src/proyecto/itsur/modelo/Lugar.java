@@ -4,13 +4,13 @@ import java.util.*;
 public class Lugar {
     String nombre;
     List<Arista> aristas;
-    int distancia;
+    double distancia;
     Lugar anterior;
     public Lugar(String nombre) {
         this.nombre = nombre;
         this.aristas = new ArrayList<>();
     }
-    public void nuevaArista(Lugar destino, int peso) {
+    public void nuevaArista(Lugar destino, double peso) {
         aristas.add(new Arista(destino, peso));
     }
     @Override
