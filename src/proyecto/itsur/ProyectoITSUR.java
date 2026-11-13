@@ -8,6 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import proyecto.itsur.modelo.Grafo;
 import proyecto.itsur.modelo.Lugar;
+import proyecto.itsur.modelo.Ruta;
 
 
 public class ProyectoITSUR {
@@ -401,5 +402,12 @@ public class ProyectoITSUR {
         nodo35.nuevaArista(nodo26, 35.87);
         nodo35.nuevaArista(nodo28, 34.78);
         nodo35.nuevaArista(nodo34, 18.46);
+        
+        Ruta rt = grafo.dijkstra(vinculacion, estacionamiento);
+        List<Lugar> a = rt.getCamino();
+        for(Lugar lugar : a) {
+            System.out.println(lugar.getNombre());
+        }
+        System.out.println(rt.getDistancia());
     }
 }

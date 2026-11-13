@@ -7,8 +7,6 @@ public class Lugar {
     private int y;
     
     List<Arista> aristas;
-    double distancia;
-    Lugar anterior;
     
     public Lugar(String nombre) {
         this.nombre = nombre;
