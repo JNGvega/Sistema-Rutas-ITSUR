@@ -148,11 +148,258 @@ public class ProyectoITSUR {
         // Biblioteca
         biblioteca.nuevaArista(nodo20, 11.75);
         
+        // Entrada Principal
+        entradaPrincipal.nuevaArista(nodo21, 20.84);
+        
+        // Auditorio
+        auditorio.nuevaArista(nodo15, 19.66);
+        
+        // Direccion
+        direccion.nuevaArista(nodo15, 10.30);
+        
+        // Vinculacion
+        vinculacion.nuevaArista(nodo16, 9.92);
+        
+        // Cabaña gastro
+        cabanaGastro.nuevaArista(nodo12, 57.99);
+        cabanaGastro.nuevaArista(nodo13, 32.06);
+        cabanaGastro.nuevaArista(nodo14, 18.76);
+        
+        // Palapas
+        palapas.nuevaArista(nodo19, 18.75);
+        palapas.nuevaArista(nodo32, 26.16);
+        palapas.nuevaArista(nodo33, 25.91);
+        
+        // Auditorio abandonado
+        auditorioAba.nuevaArista(nodo12, 27.40);
+        auditorioAba.nuevaArista(canchaBasket, 29.67);
+        
+        // Cancha Basquet
+        canchaBasket.nuevaArista(auditorioAba, 29.67);
+        canchaBasket.nuevaArista(nodo11, 41.91);
+        canchaBasket.nuevaArista(nodo12, 33.52);
+        
+        // Edificio A
+        edificioA.nuevaArista(nodo33, 12.66);
+        edificioA.nuevaArista(nodo34, 12.72);
+        
+        // Edificio B
+        edificioB.nuevaArista(nodo24, 21.85);
+        edificioB.nuevaArista(nodo25, 17.09);
+        
+        // Edificio E
+        edificioE.nuevaArista(nodo30, 27.76);
+        
+        // Cafeteria
+        cafeteria.nuevaArista(nodo29, 18.12);
+        cafeteria.nuevaArista(nodo30, 9.88);
+        
+        // TICS
+        tics.nuevaArista(nodo27, 10.25);
+        
+        // Cancha Futbol
+        canchaFut.nuevaArista(nodo5, 50.27);
+        canchaFut.nuevaArista(nodo6, 25.38);
+        
+        // Estacionamiento
+        estacionamiento.nuevaArista(nodo3, 38.76);
+        estacionamiento.nuevaArista(nodo4, 30.50);
+        
+        // Entrada Estacionamiento
+        entradaEstacionamiento.nuevaArista(nodo1, 20.95);
+        
+        // Nodo 1
+        nodo1.nuevaArista(entradaEstacionamiento, 20.95);
+        nodo1.nuevaArista(nodo2, 25.75);
+        
+        // Nodo 2
+        nodo2.nuevaArista(nodo1, 25.75);
+        nodo2.nuevaArista(nodo3, 39.68);
+        nodo2.nuevaArista(nodo23, 50.86);
+        nodo2.nuevaArista(nodo24, 40.76);
+        
+        // Nodo 3
+        nodo3.nuevaArista(estacionamiento, 38.76);
+        nodo3.nuevaArista(nodo2, 39.68);
+        nodo3.nuevaArista(nodo4, 38.83);
+        nodo3.nuevaArista(nodo7, 71.78);
+        nodo3.nuevaArista(nodo25, 66.75);
+        
+        // Nodo 4
+        nodo4.nuevaArista(estacionamiento, 30.50);
+        nodo4.nuevaArista(nodo3, 38.83);
+        nodo4.nuevaArista(nodo5, 28.89);
+        
+        // Nodo 5
+        nodo5.nuevaArista(canchaFut, 50.27);
+        nodo5.nuevaArista(nodo4, 28.89);
+        
+        // Nodo 6
+        nodo6.nuevaArista(canchaFut, 25.38);
+        nodo6.nuevaArista(nodo7, 14.64);
+        
+        // Nodo 7
+        nodo7.nuevaArista(nodo3, 71.78);
+        nodo7.nuevaArista(nodo6, 14.64);
+        nodo7.nuevaArista(nodo8, 27.69);
+        nodo7.nuevaArista(nodo25, 32.84);
+        
+        // Nodo 8
+        nodo8.nuevaArista(nodo7, 27.69);
+        nodo8.nuevaArista(nodo9, 38.11);
+        nodo8.nuevaArista(nodo26, 45.45);
+        
+        // Nodo 9
+        nodo9.nuevaArista(nodo8, 38.11);
+        nodo9.nuevaArista(nodo10, 44.14);
+        
+        // Nodo 10
+        nodo10.nuevaArista(nodo9, 44.14);
+        nodo10.nuevaArista(nodo11, 47.81);
+        nodo10.nuevaArista(nodo29, 34.43);
+        
+        // Nodo 11
+        nodo11.nuevaArista(canchaBasket, 41.91);
+        nodo11.nuevaArista(nodo10, 47.81);
+        nodo11.nuevaArista(nodo12, 57.23);
+        nodo11.nuevaArista(nodo30, 23.65);
+        
+        // Nodo 12
+        nodo12.nuevaArista(canchaBasket, 33.52);
+        nodo12.nuevaArista(cabanaGastro, 57.99);
+        nodo12.nuevaArista(auditorioAba, 27.40);
+        nodo12.nuevaArista(nodo11, 57.23);
+        nodo12.nuevaArista(nodo13, 59.33);
+        nodo12.nuevaArista(nodo31, 56.34);
+        nodo12.nuevaArista(nodo33, 83.79);
+        
+        // Nodo 13
+        nodo13.nuevaArista(cabanaGastro, 32.06);
+        nodo13.nuevaArista(nodo12, 59.33);
+        nodo13.nuevaArista(nodo14, 16.33);
+        nodo13.nuevaArista(nodo18, 44.87);
+        nodo13.nuevaArista(nodo31, 64.46);
+        nodo13.nuevaArista(nodo32, 19.63);
+        
+        // Nodo 14
+        nodo14.nuevaArista(cabanaGastro, 18.76);
+        nodo14.nuevaArista(nodo13, 16.33);
+        nodo14.nuevaArista(nodo15, 16.39);
+        
+        // Nodo 15
+        nodo15.nuevaArista(auditorio, 19.66);
+        nodo15.nuevaArista(direccion, 10.30);
+        nodo15.nuevaArista(nodo14, 16.39);
+        nodo15.nuevaArista(nodo16, 14.94);
+        
+        
+        // Nodo 16
+        nodo16.nuevaArista(vinculacion, 9.92);
+        nodo16.nuevaArista(nodo15, 14.94);
+        nodo16.nuevaArista(nodo17, 14.10);
+        
+        // Nodo 17
+        nodo17.nuevaArista(nodo16, 14.10);
+        nodo17.nuevaArista(nodo18, 20.87);
+        
+        // Nodo 18
+        nodo18.nuevaArista(nodo13, 44.87);
+        nodo18.nuevaArista(nodo17, 20.87);
+        nodo18.nuevaArista(nodo19, 39.56);
+        
+        // Nodo 19
+        nodo19.nuevaArista(nodo18, 39.56);
+        nodo19.nuevaArista(nodo20, 24.71);
+        nodo19.nuevaArista(nodo22, 22.79);
+        nodo19.nuevaArista(palapas, 18.75);
+        
         // Nodo 20
         nodo20.nuevaArista(biblioteca, 11.75);
         nodo20.nuevaArista(nodo21, 18.10);
+        nodo20.nuevaArista(nodo19, 24.71);
         
         // Nodo 21
+        nodo21.nuevaArista(entradaPrincipal, 20.84);
         nodo21.nuevaArista(nodo20, 18.10);
+        nodo21.nuevaArista(nodo22, 25.00);
+        
+        // Nodo 22
+        nodo22.nuevaArista(nodo19, 22.79);
+        nodo22.nuevaArista(nodo21, 25.00);
+        nodo22.nuevaArista(nodo23, 22.14);
+        nodo22.nuevaArista(nodo33, 32.73);
+        
+        // Nodo 23
+        nodo23.nuevaArista(nodo2, 50.86);
+        nodo23.nuevaArista(nodo22, 22.14);
+        nodo23.nuevaArista(nodo24, 39.69);
+        
+        // Nodo 24
+        nodo24.nuevaArista(edificioB, 21.85);
+        nodo24.nuevaArista(nodo2, 40.76);
+        nodo24.nuevaArista(nodo23, 39.69);
+        nodo24.nuevaArista(nodo35, 33.07);
+        
+        // Nodo 25
+        nodo25.nuevaArista(edificioB, 17.09);
+        nodo25.nuevaArista(nodo3, 66.75);
+        nodo25.nuevaArista(nodo7, 32.84);
+        nodo25.nuevaArista(nodo26, 26.96);
+        
+        // Nodo 26
+        nodo26.nuevaArista(nodo8, 45.45);
+        nodo26.nuevaArista(nodo25, 26.96);
+        nodo26.nuevaArista(nodo27, 27.20);
+        nodo26.nuevaArista(nodo35, 35.87);
+        
+        // Nodo 27
+        nodo27.nuevaArista(tics, 10.25);
+        nodo27.nuevaArista(nodo26, 27.20);
+        nodo27.nuevaArista(nodo28, 15.56);
+        
+        // Nodo 28
+        nodo28.nuevaArista(nodo27, 15.56);
+        nodo28.nuevaArista(nodo29, 25.89);
+        nodo28.nuevaArista(nodo30, 44.70);
+        nodo28.nuevaArista(nodo31, 37.07);
+        nodo28.nuevaArista(nodo35, 34.78);
+        
+        // Nodo 29
+        nodo29.nuevaArista(cafeteria, 18.12);
+        nodo29.nuevaArista(nodo10, 34.43);
+        nodo29.nuevaArista(nodo28, 25.89);
+        
+        // Nodo 30
+        nodo30.nuevaArista(cafeteria, 9.88);
+        nodo30.nuevaArista(edificioE, 27.76);
+        nodo30.nuevaArista(nodo11, 23.65);
+        nodo30.nuevaArista(nodo28, 44.70);
+        
+        // Nodo 31
+        nodo31.nuevaArista(nodo12, 56.34);
+        nodo31.nuevaArista(nodo13, 64.46);
+        nodo31.nuevaArista(nodo28, 37.07);
+        nodo31.nuevaArista(nodo34, 29.55);
+        
+        // Nodo 32
+        nodo32.nuevaArista(palapas, 26.16);
+        nodo32.nuevaArista(nodo13, 19.63);
+        
+        // Nodo 33
+        nodo33.nuevaArista(edificioA, 12.66);
+        nodo33.nuevaArista(nodo12, 83.79);
+        nodo33.nuevaArista(nodo22, 32.73);
+        nodo33.nuevaArista(palapas, 25.91);
+        
+        // Nodo 34
+        nodo34.nuevaArista(edificioA, 12.72);
+        nodo34.nuevaArista(nodo31, 29.55);
+        nodo34.nuevaArista(nodo35, 18.46);
+        
+        // Nodo 35
+        nodo35.nuevaArista(nodo24, 33.07);
+        nodo35.nuevaArista(nodo26, 35.87);
+        nodo35.nuevaArista(nodo28, 34.78);
+        nodo35.nuevaArista(nodo34, 18.46);
     }
 }
