@@ -8,6 +8,7 @@ public class Arista {
     para el proyecto
     */
     private double distancia;
+    
     public Arista (Lugar destino, double distancia) {
         this.destino = destino;
         this.distancia = distancia;

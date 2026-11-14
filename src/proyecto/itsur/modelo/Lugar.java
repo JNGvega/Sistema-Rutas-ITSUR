@@ -2,45 +2,49 @@ package proyecto.itsur.modelo;
 
 import java.util.*;
 
-
 public class Lugar {
     private String nombre;
     private int x;
     private int y;
-    
-    public Lugar (String nombre, int x, int y) {
+    List<Arista> aristas = new ArrayList<>();
+
+    public Lugar(String nombre, int x, int y) {
         this.nombre = nombre;
         this.x = x;
         this.y = y;
     }
-    
-    public String getNombre () {
+
+    public void nuevaArista(Lugar destino, double peso) {
+        aristas.add(new Arista(destino, peso));
+    }
+
+    public String getNombre() {
         return nombre;
     }
-    
-    public int getX () {
+
+    public int getX() {
         return x;
     }
-    
-    public int getY () {
+
+    public int getY() {
         return y;
     }
-    
+
     @Override
-    public boolean equals (Object o) {
+    public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Lugar lugar = (Lugar)o;
+        Lugar lugar = (Lugar) o;
         return Objects.equals(nombre, lugar.nombre);
     }
-    
+
     @Override
-    public int hashCode () {
+    public int hashCode() {
         return Objects.hash(nombre);
     }
-    
-    @Override 
-    public String toString () {
+
+    @Override
+    public String toString() {
         return nombre;
     }
 }
